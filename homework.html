@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(202, 244, 246);
+        }
+        .form-tag{
+            text-align:center;
+            margin: 0px 450px 0px 450px;
+            /* border-radius: 10px; */
+        }
+        legend{
+            color: blue;
+            font-size: 20px;
+        }
+        center>input{
+            color:rgb(9, 9, 108);
+            background-color: rgb(116, 249, 249);
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="form-tag">
+        <fieldset style="flex-direction: column; border-radius: 10px; ">
+            <legend><h3>Participent Details</h3></legend>
+            <label for="name">Name:</label>
+            <input type="text" name="" id="name" placeholder="Enter your name">
+            <br><br>
+            <label for="dob">Upload id:</label>
+            <input type="file" name="dob" id="dob">
+            <br>
+            <br>
+            <label for="rollno">Rollno:</label>
+            <input type="number" name="rollno" placeholder="Registration no">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender">Male
+            <input type="radio" id="gender" name="gender">Female
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email">
+            <br><br>
+            <label for="number">Phone number:</label>
+            <input type="number" id="number" placeholder="phone number">
+            <br><br>
+        </fieldset>
+        <fieldset style="border-radius: 10px;">
+            <legend><h3>Event Details</Details></h3></legend>
+            <p><i>Select the event that you want to participate.</i></p>
+            <label for="event">Event:</label>
+            <select name="event" id="event" aria-placeholder="select">
+                <option value="select" disabled selected>select</option>
+                <option value="culture">cultural dance</option>
+                <option value="dance">Modern Dance</option>
+                <option value="singing">singing</option>
+                <option value="hosting">Hosting</option>
+                <option value="Decorating">Decorating</option>
+            </select><br><br>
+            <i>You are good at:</i><br><br>
+            <input type="checkbox" name="hosting" id="hosting">Hosting <br>
+            <input type="checkbox" name="decorating" id="decorating">Decorating <br>
+            <input type="checkbox" name="Acting" id="Acting">Acting <br>
+            <input type="checkbox" name="Dancing" id="Dancing">Dancing <br>
+            <input type="checkbox" name="singing" id="singing">Singing <br><br>
+            <label for="prof">Proficiency:</label>
+            <input type="range" name="prof" id="prof">
+
+        </fieldset>
+        <fieldset style="border-radius: 10px;">
+            <legend><h3>More Details:</h3></legend>
+            <label for="branch">Branch:</label>
+            <select name="branch" id="branch">
+                <option value="select" disabled selected>select</option>
+                <option value="1">CSE</option>
+                <option value="2">ECE</option>
+                <option value="3">Mech</option>
+                <option value="4">IT</option>
+            </select><br><br>
+            <label for="year">Year:</label>
+            <select name="branch" id="branch">
+                <option value="select" disabled selected>select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
+            <label for="sccol">Scholar:</label>
+            <input type="radio" id="sccol" name="sccol">Day Scholar
+            <input type="radio" id="sccol" name="sccol">Hosteller
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        
+        <center>
+            <input type="submit" value="Sublit">
+            <input type="reset" value="Reset">
+        </center>
+    </form>
+</body>
+</html>
